@@ -10,7 +10,7 @@
 
 ---
 
-## Summary:
+## About Me:
 From February to October 2022, I took a course at Yandex. The workshop" is a Python developer (wrote a telegram bot, a social network and an application where users can publish their recipes).
 During the course of the 9-month course, I had an idea of what and how a back-end developer should do.
 At the end of July 2022, I realized with full confidence that I wanted to connect my life with web development, and since I did not have the opportunity to study fully and with full dedication, but I had the accumulated funds, I decided to quit my job and finish my studies at Yandex.Practicum", having taken up close study of new materials.
@@ -23,6 +23,7 @@ At the moment I am taking a course at RS School on JS / Front-end. stage 0 (RU) 
 - Responsible
 - Meticulous =)
 - Ability to negotiate
+- Purposeful
 
 
 ## Special skills:
