@@ -1,7 +1,13 @@
+@media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+  }
 /*---Шрифты---*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 /*---Общее---*/
+
 *,
 *::before,
 *::after {
@@ -9,7 +15,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /*---плавно переходит по ссылке---*/
 }
 
 * {
@@ -21,22 +27,17 @@ section {
 }
 
 body {
-    /* border: 1px solid red; */
-    
     background: linear-gradient(180deg, #ffffff, #c9e0f6);
-
     font-size: 16px;        /*---размер шрифта---*/
     color: #000000;       /*---цвет шрифта---*/
     display: flex;                  /*---Прижал footer вниз---*/
     flex-direction: column;         /*---Прижал footer вниз---*/
     justify-content: space-between; /*---Прижал footer вниз---*/
-
-    
-    max-width: 1220px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    max-width: 1220px;      /*---ширина выставлена 1220px---*/  
+    margin-left: auto;      /*---по центру при left и right ---*/
+    margin-right: auto;     /*---по центру при left и right ---*/
+    padding-left: 10px;      /*---отступ слева при скроллинге---*/
+    padding-right: 10px;     /*---отступ справа при скроллинге---*/
 }
 
 h1 {
@@ -81,7 +82,7 @@ p {
 .label {
     display: flex; justify-content: space-around; /*---выравнивание в один ряд и потом с пробелами до, между и после строк---*/
     /* text-align: right; */
-
+    flex-wrap:wrap;         /* переносит блоками вниз если не входит по ширине */
     /* display: inline-block; */
     margin-left: 160px; /* отступ слева */
     margin-right: 200px; /* отступ справа */
@@ -94,8 +95,13 @@ p {
 .nav-link {
     padding-left: 30px;
     color: #ffffff;
+    text-decoration: none;
 }
 
+.nav-link:hover {
+    text-decoration: underline; /*---Подчёркивание ссылок при наведении на них курсора мыши---*/
+    color: #0b0303;         /*---выделение цвета - черного при наведении---*/
+}
 
 /*---Header---END---*/
 
@@ -114,7 +120,7 @@ p {
     -webkit-box-pack: end;
     justify-content: flex-end;
     padding-right: 5rem;
-
+    
     text-align: center;
     width: 50%;
   }
@@ -123,7 +129,8 @@ p {
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
+    /* justify-content: center; */
+    /* text-align: center; */
 }
 
 .main-name-title {
@@ -136,24 +143,24 @@ p {
 .header-direction {
     font-weight: 600;
     font-size: 44px;
-    margin: 30px 110px 135px 50px; 
+    margin: 30px 110px 120px 50px;  /* верх, слева, снизу, справа */
 }
 
 .header-photo {
-    border-radius: 50%;
+    border-radius: 50%;           /* радиус */ 
 }
 
 .me {
     background: linear-gradient(80deg, #e3e1e1, #abadae);
     text-align: center;
-    border-radius: 30px;
+    border-radius: 30px;           /* радиус */ 
 }
 
 .about-me {
     /* background: linear-gradient(80deg, #e6e48d, #50780b); */
     /* width: 100%; */
     text-align: justify;            /* выравнил текст по ширине */
-    text-indent: 30px;
+    text-indent: 30px;              /* отступ слева */
     padding: 0px 0px 15px 0px;     /* верх, право, низ, лево */
 } 
 
@@ -176,12 +183,17 @@ p {
 .subtitles {
     background: linear-gradient(80deg, #e3e1e1, #abadae);
     text-align: center;
-    border-radius: 30px;
+    border-radius: 30px;           /* радиус */ 
 }
 
 .text {
     text-align: justify;            /* выравнил текст по ширине */
-    padding: 0px 0px 15px 0px;
+    padding: 0px 0px 15px 0px;     /* верх, право, низ, лево */
+}
+.text-project {
+    text-align: justify;            /* выравнил текст по ширине */
+    padding: 0px 0px 15px 0px;     /* верх, право, низ, лево */
+    text-indent: 30px;              /* отступ слева */
 }
 
 .project {
@@ -192,7 +204,7 @@ p {
     background: linear-gradient(80deg, #e6e48d, #95cff8);
     display: flex; justify-content: space-around; /*---выравнивание в один ряд и потом с пробелами до, между и после строк---*/
     padding-top: 1rem;
-    border-radius: 30px;
+    border-radius: 30px;           /* радиус */ 
 }
 
 .project-address {
@@ -205,8 +217,12 @@ p {
     padding: 0px 0px 10px 0px;     /* верх, право, низ, лево */
 }
 
+.footer-my-githab:hover {
+    color: #f20707;         /*---выделение цвета - черного при наведении---*/
+}
+
 .project-photo {
     text-align: center;
-    border-radius: 30px;
-    padding: 0px 0px 10px 0px;
+    border-radius: 30px;           /* радиус */ 
+    padding: 0px 0px 10px 0px;     /* верх, право, низ, лево */
 }
