@@ -1,0 +1,228 @@
+@media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+  }
+/*---Шрифты---*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/*---Общее---*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box; 
+}
+
+html {
+    scroll-behavior: smooth; /*---плавно переходит по ссылке---*/
+}
+
+* {
+    outline: none !important;
+}
+
+section {
+    display: block;
+}
+
+body {
+    background: linear-gradient(180deg, #ffffff, #c9e0f6);
+    font-size: 16px;        /*---размер шрифта---*/
+    color: #000000;       /*---цвет шрифта---*/
+    display: flex;                  /*---Прижал footer вниз---*/
+    flex-direction: column;         /*---Прижал footer вниз---*/
+    justify-content: space-between; /*---Прижал footer вниз---*/
+    max-width: 1220px;      /*---ширина выставлена 1220px---*/  
+    margin-left: auto;      /*---по центру при left и right ---*/
+    margin-right: auto;     /*---по центру при left и right ---*/
+    padding-left: 10px;      /*---отступ слева при скроллинге---*/
+    padding-right: 10px;     /*---отступ справа при скроллинге---*/
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 3px 2px rgb(188, 220, 242);
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin: 0 0 2rem;
+    text-shadow: 3px 2px rgb(188, 220, 242);
+}
+
+h3 {
+    font-size: 2rem;
+    margin: 0 0 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    /* margin: 0 0 1rem; */
+}
+
+/*---Общее---END---*/
+
+/*---Header---*/
+
+
+.header {
+    -webkit-box-pack: center;
+    color: #000000;
+}
+
+.container-header-menu {
+    background: linear-gradient(80deg, #e6e48d, #95cff8);
+    color: #000000;
+    padding: 10px;
+    border-radius: 30px;        /* закругление */
+}
+
+.label {
+    display: flex; justify-content: space-around; /*---выравнивание в один ряд и потом с пробелами до, между и после строк---*/
+    /* text-align: right; */
+    flex-wrap:wrap;         /* переносит блоками вниз если не входит по ширине */
+    /* display: inline-block; */
+    margin-left: 160px; /* отступ слева */
+    margin-right: 200px; /* отступ справа */
+
+    font-size: 30px;
+    /* text-align: center; */
+    /* word-spacing: 30px; */
+}
+
+.nav-link {
+    padding-left: 30px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline; /*---Подчёркивание ссылок при наведении на них курсора мыши---*/
+    color: #403838;         /*---выделение цвета - черного при наведении---*/
+}
+
+/*---Header---END---*/
+
+        /*---main---*/
+.main {
+    display: block;
+    
+}
+
+.container {
+    display: flex; justify-content: space-between; /*---выравнивание в один ряд и потом по сторонам---*/
+    column-gap: 30px;  /*---отступ между колонками---*/
+    padding-top: 1rem;
+}
+
+.section-photo {
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    padding-right: 5rem;
+    
+    text-align: center;
+    width: 50%;
+  }
+
+.section-photo, .section-name-title {
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    /* justify-content: center; */
+    /* text-align: center; */
+}
+
+.main-name-title {
+    margin: 100px 250px 25px 25px;  /* верх, слева, снизу, справа */
+    text-align: center;
+    font-weight: 600;
+    font-size: 44px;
+}
+
+.header-direction {
+    font-weight: 600;
+    font-size: 44px;
+    margin: 30px 110px 120px 50px;  /* верх, слева, снизу, справа */
+}
+
+.header-photo {
+    border-radius: 50%;           /* радиус */ 
+}
+
+.me {
+    background: linear-gradient(80deg, #e3e1e1, #abadae);
+    text-align: center;
+    border-radius: 30px;           /* радиус */ 
+}
+
+.about-me {
+    /* background: linear-gradient(80deg, #e6e48d, #50780b); */
+    /* width: 100%; */
+    text-align: justify;            /* выравнил текст по ширине */
+    text-indent: 30px;              /* отступ слева */
+    padding: 0px 0px 15px 0px;     /* верх, право, низ, лево */
+} 
+
+.div-front {
+    display: flex; 
+}
+
+.left-side {
+    display: block;
+    width: 37%;
+}
+
+.right-side {
+    display: block;
+    width: 58%;
+    position: relative;
+    left: 5%;
+}
+
+.subtitles {
+    background: linear-gradient(80deg, #e3e1e1, #abadae);
+    text-align: center;
+    border-radius: 30px;           /* радиус */ 
+}
+
+.text {
+    text-align: justify;            /* выравнил текст по ширине */
+    padding: 0px 0px 15px 0px;     /* верх, право, низ, лево */
+}
+.text-project {
+    text-align: justify;            /* выравнил текст по ширине */
+    padding: 0px 0px 15px 0px;     /* верх, право, низ, лево */
+    text-indent: 30px;              /* отступ слева */
+}
+
+.project {
+    padding: 0px 0px 15px 0px;     /* верх, право, низ, лево */
+}
+
+.container-footer {
+    background: linear-gradient(80deg, #e6e48d, #95cff8);
+    display: flex; justify-content: space-around; /*---выравнивание в один ряд и потом с пробелами до, между и после строк---*/
+    padding-top: 1rem;
+    border-radius: 30px;           /* радиус */ 
+}
+
+.project-address {
+    display: flex;
+    margin-right: 20px; 
+}
+
+.footer-my-githab {
+    padding: 0px 0px 10px 0px;     /* верх, право, низ, лево */
+}
+
+.footer-my-githab:hover {
+    color: #f20707;         /*---выделение цвета - черного при наведении---*/
+}
+
+.project-photo {
+    text-align: center;
+    border-radius: 30px;           /* радиус */ 
+    padding: 0px 0px 10px 0px;     /* верх, право, низ, лево */
+}
