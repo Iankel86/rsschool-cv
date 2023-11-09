@@ -100,7 +100,7 @@ p {
 
 .nav-link:hover {
     text-decoration: underline; /*---Подчёркивание ссылок при наведении на них курсора мыши---*/
-    color: #0b0303;         /*---выделение цвета - черного при наведении---*/
+    color: #403838;         /*---выделение цвета - черного при наведении---*/
 }
 
 /*---Header---END---*/
@@ -108,6 +108,7 @@ p {
         /*---main---*/
 .main {
     display: block;
+    
 }
 
 .container {
@@ -210,7 +211,6 @@ p {
 .project-address {
     display: flex;
     margin-right: 20px; 
-     
 }
 
 .footer-my-githab {
